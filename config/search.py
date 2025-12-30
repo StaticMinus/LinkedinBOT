@@ -1,5 +1,5 @@
 '''
-Author:     STX MINUS
+Author:     David Olagbenro
 WhatsApp:   +234 813 732 2932
 Location:   Nigeria
 Role:       Software Developer
@@ -18,7 +18,7 @@ version:    25.01.01
 search_terms = ["IT"]
 
 # Search location, this will be filled in "City, state, or zip code" search box. If left empty as "", tool will not fill it.
-search_location = "Texas, United States"               # Some valid examples: "", "United States", "India", "Chicago, Illinois, United States", "90001, Los Angeles, California, United States", "Bengaluru, Karnataka, India", etc.
+search_location = "Worldwide"               # Some valid examples: "", "United States", "India", "Chicago, Illinois, United States", "90001, Los Angeles, California, United States", "Bengaluru, Karnataka, India", etc.
 
 # After how many number of applications in current search should the bot switch to next search? 
 switch_number = 30                 # Only numbers greater than 0... Don't put in quotes
@@ -44,15 +44,15 @@ This is below format: QUESTION = VALID_ANSWER
 
 '''
 
-sort_by = ""                       # "Most recent", "Most relevant" or ("" to not select) 
-date_posted = "Past week"         # "Any time", "Past month", "Past week", "Past 24 hours" or ("" to not select)
+sort_by = "Most recent"                 # "Most recent", "Most relevant" or ("" to not select) 
+date_posted = "Past 24 hours"         # "Any time", "Past month", "Past week", "Past 24 hours" or ("" to not select)
 salary = ""                        # "$40,000+", "$60,000+", "$80,000+", "$100,000+", "$120,000+", "$140,000+", "$160,000+", "$180,000+", "$200,000+"
 
 easy_apply_only = True             # True or False, Note: True or False are case-sensitive
 
 experience_level = []              # (multiple select) "Internship", "Entry level", "Associate", "Mid-Senior level", "Director", "Executive"
 job_type = []                      # (multiple select) "Full-time", "Part-time", "Contract", "Temporary", "Volunteer", "Internship", "Other"
-on_site = []                       # (multiple select) "On-site", "Remote", "Hybrid"
+on_site = ["Remote"]               # (multiple select) "On-site", "Remote", "Hybrid"
 
 companies = []                     # (dynamic multiple select) make sure the name you type in list exactly matches with the company name you're looking for, including capitals. 
                                    # Eg: "7-eleven", "Google","X, the moonshot factory","YouTube","CapitalG","Adometry (acquired by Google)","Meta","Apple","Byte Dance","Netflix", "Snowflake","Mineral.ai","Microsoft","JP Morgan","Barclays","Visa","American Express", "Snap Inc", "JPMorgan Chase & Co.", "Tata Consultancy Services", "Recruiting from Scratch", "Epic", and so on...
@@ -63,7 +63,7 @@ job_titles = []                    # (dynamic multiple select)
 benefits = []                      # (dynamic multiple select)
 commitments = []                   # (dynamic multiple select)
 
-under_10_applicants = False        # True or False, Note: True or False are case-sensitive
+under_10_applicants = True          # True or False, Note: True or False are case-sensitive
 in_your_network = False            # True or False, Note: True or False are case-sensitive
 fair_chance_employer = False       # True or False, Note: True or False are case-sensitive
 

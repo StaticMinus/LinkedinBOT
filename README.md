@@ -1,6 +1,6 @@
 # LinkedIn AI Auto Job Applier by STX MINUS 🤖
 
-This is a web scraping bot that automates the process of job applications on LinkedIn, customized by **STX MINUS**.
+This is a web scraping bot that automates the process of job applications on LinkedIn, customized by **David Olagbenro**.
 
 ## 📽️ See it in Action
 

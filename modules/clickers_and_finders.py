@@ -1,5 +1,5 @@
 '''
-Author:     STX MINUS
+Author:     David Olagbenro
 WhatsApp:   +234 813 732 2932
 Location:   Nigeria
 Role:       Software Developer
@@ -21,7 +21,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
 
 # Click Functions
-def wait_span_click(driver: WebDriver, text: str, time: float=5.0, click: bool=True, scroll: bool=True, scrollTop: bool=False) -> WebElement | bool:
+def wait_span_click(driver: WebDriver, text: str, time: float=15.0, click: bool=True, scroll: bool=True, scrollTop: bool=False) -> WebElement | bool:
     '''
     Finds the span element with the given `text`.
     - Returns `WebElement` if found, else `False` if not found.
@@ -43,7 +43,7 @@ def wait_span_click(driver: WebDriver, text: str, time: float=5.0, click: bool=T
             # print_lg(e)
             return False
 
-def multi_sel(driver: WebDriver, texts: list, time: float=5.0) -> None:
+def multi_sel(driver: WebDriver, texts: list, time: float=15.0) -> None:
     '''
     - For each text in the `texts`, tries to find and click `span` element with that text.
     - Will spend a max of `time` seconds in searching for each element.
@@ -93,7 +93,7 @@ def boolean_button_click(driver: WebDriver, actions: ActionChains, text: str) ->
         # print_lg(e)
 
 # Find functions
-def find_by_class(driver: WebDriver, class_name: str, time: float=5.0) -> WebElement | Exception:
+def find_by_class(driver: WebDriver, class_name: str, time: float=15.0) -> WebElement | Exception:
     '''
     Waits for a max of `time` seconds for element to be found, and returns `WebElement` if found, else `Exception` if not found.
     '''
@@ -112,7 +112,7 @@ def scroll_to_view(driver: WebDriver, element: WebElement, top: bool = False, sm
     return driver.execute_script('arguments[0].scrollIntoView({block: "center", behavior: "'+behavior+'" });', element)
 
 # Enter input text functions
-def text_input_by_ID(driver: WebDriver, id: str, value: str, time: float=5.0) -> None | Exception:
+def text_input_by_ID(driver: WebDriver, id: str, value: str, time: float=15.0) -> None | Exception:
     '''
     Enters `value` into the input field with the given `id` if found, else throws NotFoundException.
     - `time` is the max time to wait for the element to be found.
